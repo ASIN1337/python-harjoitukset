@@ -11,3 +11,7 @@ Tein tehtävät 1 ja 2.
 Tein tehtävät 1, 2, 3, 4, 5 ja 6
 
 En ole varma onko tehtävän 5 matematiikka oikein.
+
+## Projektitehtävä 1
+
+Tein tehtävä 1
