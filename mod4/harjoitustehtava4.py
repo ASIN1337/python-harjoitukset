@@ -1,4 +1,4 @@
-4vuosiluku=int(input("Anna vuosiluku: "))
+vuosiluku=int(input("Anna vuosiluku: "))
 
 karkausvuosi=vuosiluku % 4 
 
