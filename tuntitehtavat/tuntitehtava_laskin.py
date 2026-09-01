@@ -11,7 +11,7 @@ if laskin == "1":
     summa=eka + toka
     print("summa: " , summa)
 
-elif laskin == "2"
+elif laskin == "2":
     print("valitsit:" , miinus)
     eka2=(float(input("anna ensimmäinen numero: ")))
     toka2=(float(input("anna toinen numero: ")))

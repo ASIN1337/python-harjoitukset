@@ -16,4 +16,3 @@ if karkausvuosi == 0:
         print("vuosi on karkausvuosi")
 else:     
     print("vuosi ei ole karkausvuosi")
-

@@ -21,3 +21,7 @@ Tein tehtävä 1
 Tein tehtävät 1, 2, 3 ja 4
 
 En saanut tehtävä 4 karkausvuosia sillain että 100 jaolliset olisivat karkausvuosia vain jos ne voi jakaa 400
+
+## Moduuli 5 
+
+Tein tehtävät 1, 2, 
