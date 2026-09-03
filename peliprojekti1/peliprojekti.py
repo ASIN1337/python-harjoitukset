@@ -11,7 +11,8 @@ if ikä < 12:
 if ikä > 12:
         print("hei!", nimi)
         while True:     
-            print("päävalikko")
+            print("päävalikko!!")
+            print("kirjoita joko " "tarina"", ""lahja"" tai lopeta")
             komento=input("Anna komento: ")
 
             if komento == "tarina":
