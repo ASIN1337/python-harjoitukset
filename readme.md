@@ -25,3 +25,9 @@ En saanut tehtävä 4 karkausvuosia sillain että 100 jaolliset olisivat karkaus
 ## Moduuli 5 
 
 Tein tehtävät 1, 2, ja 3
+
+## Moduuli 6
+
+Tein tehtävät 1 ja 2
+
+En saanut tehtävä 1 nätimmin lukujen summia.
