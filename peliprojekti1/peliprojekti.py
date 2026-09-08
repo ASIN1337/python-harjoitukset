@@ -12,7 +12,7 @@ if ikä >= 12:
         print("hei!", nimi)
         while True:     
             print("päävalikko!!")
-            print("kirjoita joko " "tarina"", ""lahja"" tai lopeta")
+            print("kirjoita joko " "tarina"", ""lahja"", ""pakene"" tai lopeta")
             komento=input("Anna komento: ")
 
             if komento == "tarina":
@@ -21,6 +21,9 @@ if ikä >= 12:
             if komento == "lahja":
                 print(nimi , "!", "tässä sinulle uusi auto")
 
+            if komento == "pakene":
+                 print("pelaaja", nimi ,"on valinnut juosta pakoon")
+
             if komento == "lopeta": 
                 break
-               
+
