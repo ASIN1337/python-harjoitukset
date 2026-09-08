@@ -8,7 +8,7 @@ print("nimi: " , nimi  , "ikä: " , ikä)
 if ikä < 12:
     print("pelaaja on alaikäinen")
 
-if ikä > 12:
+if ikä >= 12:
         print("hei!", nimi)
         while True:     
             print("päävalikko!!")
