@@ -1,6 +1,6 @@
 # Ohjelmisto 1 - Python harjoitukset
 
-**Oma Nimeni**
+**Phirasin Puisto**
 
 ## Moduuli 1
 
