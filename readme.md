@@ -35,3 +35,7 @@ En saanut tehtävä 1 nätimmin lukujen summia.
 ## Moduuli 7
 
 Tein tehtävät 1, 4 ja 5
+
+## Moduuli 8
+
+Tein tehtävät 1 ja 2
