@@ -39,3 +39,11 @@ Tein tehtävät 1, 4 ja 5
 ## Moduuli 8
 
 Tein tehtävät 1 ja 2
+
+## Moduuli 9 
+
+Tein tehtävät 1, 2 ja 3
+
+## Moduuli 10
+
+Tein tehtävät 1 ja 2
