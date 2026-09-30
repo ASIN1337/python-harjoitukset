@@ -1,0 +1,10 @@
+import json
+
+tallennus_data = {
+    "nimi": "Inception",
+    "vuosi": 2010,
+    "näyttelijät": ["Leonardo DiCaprio", "Elliot Page"]
+}
+with open("elokuva.txt", "r") as tiedosto:
+    data_luettu = json.load(tiedosto)
+print(f"Elokuvan nimi: {data_luettu["nimi"]}, vuosi: {data_luettu["vuosi"]}, Elokuvan näyttelijät: {data_luettu["näyttelijät"]}")
