@@ -1,3 +1,5 @@
+import pelaaja
+
 class Paavalikko:
     def __init__(self):
 
