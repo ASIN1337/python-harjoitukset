@@ -1,8 +1,7 @@
-import pelaaja
-
+from .pelaaja import Pelaaja
+    
 class Paavalikko:
-    def __init__(self):
-
+    
     def kysy_esine():
         kysymys = input ("anna pelaajalle esine tai lopeta painamalla enter: ")
         esineet.append(kysymys)

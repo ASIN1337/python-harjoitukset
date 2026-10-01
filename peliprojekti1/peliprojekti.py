@@ -58,3 +58,14 @@ if ikä >= 12:
             if komento == "lopeta": 
                 break
 
+     
+
+
+
+
+
+
+
+
+
+      
