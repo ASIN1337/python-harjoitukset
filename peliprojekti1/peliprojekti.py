@@ -38,7 +38,7 @@ class Paavalikko():
         global pelaajankolikot          #Netistä löydetty "global jolla saan funktiosta arvon palautettua pääohjelmaan lisätietoa readme tiedostossa"
         while True:                     
             random_komento = input("haluatko pelata random konetta k/kyllä vai e/ei: ")
-            random1 = random.randint(1,10)
+            random1 = random.randint(1,15)
 
             if random_komento == "k":
                 if random1 == 1:
@@ -102,6 +102,41 @@ class Paavalikko():
                     print("läppärin kannessa on monta tarraa...")
                     print("KOLIKOT ANNETAAN HAHMOLLESI")
                     pelaajankolikot = self.pelaajan_kolikot + 50
+                    return pelaajankolikot
+
+                if random1 == 11:
+                    print("OLET SAANUT ESINEEN BANAANIPIRTELÖ!! ESINEEN ARVO ON 15 KOLIKKOA")
+                    print("ainekset 2 banaania, 0.5 L vaniljajäätelöä, 2 DL maitoa ja vähän vaniljasokeria")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 15
+                    return pelaajankolikot
+
+                if random1 == 12:
+                    print("OLET SAANUT ESINEEN SESSUN HIKISET SUKAT..!! ESINEEN ARVO ON 67 KOLIKKOA")
+                    print("...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 67
+                    return pelaajankolikot
+
+                if random1 == 13:
+                    print("OLET SAANUT ESINEEN PUHELIN!! ESINEEN ARVO ON 100 KOLIKKOA")
+                    print("puhelimessta roikkuu puhelin koru...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 100
+                    return pelaajankolikot
+
+                if random1 == 14:
+                    print("OLET SAANUT ESINEEN MIKUN PAITA!! ESINEEN ARVO ON 67 KOLIKKOA")
+                    print("tuoksuu hyvältä")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 67
+                    return pelaajankolikot
+
+                if random1 == 15:
+                    print("OLET SAANUT ESINEEN liandryn piina...?? esineen arvo on 0 kolikkoa...?")
+                    print("kyseinen reliikki on hyödytön kuolevaisille, mutta oikessa käsissä voittamaton")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 0
                     return pelaajankolikot
                 
             if random_komento == "e":
