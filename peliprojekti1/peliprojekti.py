@@ -38,7 +38,7 @@ class Paavalikko():
         global pelaajankolikot          #Netistä löydetty "global jolla saan funktiosta arvon palautettua pääohjelmaan lisätietoa readme tiedostossa"
         while True:                     
             random_komento = input("haluatko pelata random konetta k/kyllä vai e/ei: ")
-            random1 = random.randint(1,15)
+            random1 = random.randint(1,16)
 
             if random_komento == "k":
                 if random1 == 1:
@@ -137,6 +137,13 @@ class Paavalikko():
                     print("kyseinen reliikki on hyödytön kuolevaisille, mutta oikessa käsissä voittamaton")
                     print("KOLIKOT ANNETAAN HAHMOLLESI")
                     pelaajankolikot = self.pelaajan_kolikot + 0
+                    return pelaajankolikot
+                
+                if random1 == 16:
+                    print("OLET SAANUT ESINEEN KISSA PEHMOLELU!! ESINEEN ARVO ON 22 KOLIKKOA")
+                    print("pörröinen, pieni ja pehmeä")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 22
                     return pelaajankolikot
                 
             if random_komento == "e":
