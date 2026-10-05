@@ -38,7 +38,7 @@ class Paavalikko():
         global pelaajankolikot          #Netistä löydetty "global jolla saan funktiosta arvon palautettua pääohjelmaan lisätietoa readme tiedostossa"
         while True:                     
             random_komento = input("haluatko pelata random konetta k/kyllä vai e/ei: ")
-            random1 = random.randint(1,5)
+            random1 = random.randint(1,10)
 
             if random_komento == "k":
                 if random1 == 1:
@@ -71,6 +71,39 @@ class Paavalikko():
                     pelaajankolikot = self.pelaajan_kolikot + 500
                     return pelaajankolikot
 
+                if random1 == 6:
+                    print("OLET SAANUT ESINEEN NUKKE NIMELTÄ RESSU!!!!! ESINEEN ARVO ON 1000 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 1000
+                    return pelaajankolikot
+
+                if random1 == 7:
+                    print("OLET SAANUT ESINEEN KIRVES!! ESINEEN ARVO ON 4 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 4
+                    return pelaajankolikot
+
+                if random1 == 8:
+                    print("OLET SAANUT PAAVO PESUSIENI SUKAT!! ESINEEN ARVO ON 10 KOLIKKOA")
+                    print("vasemmassa sukassa on reikä...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 10
+                    return pelaajankolikot
+
+                if random1 == 9:
+                    print("OLET SAANUT ESINEEN PYJAMA HOUSUT!! ESINEEN ARVO ON 5 KOLIKKOA")
+                    print("housuissa on jostakin syystä monta reikää...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 5
+                    return pelaajankolikot
+
+                if random1 == 10:
+                    print("OLET SAANUT ESINEEN LÄPPÄRI!!!! ESINEEN ARVO ON 50 KOLIKKOA")
+                    print("läppärin kannessa on monta tarraa...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    pelaajankolikot = self.pelaajan_kolikot + 50
+                    return pelaajankolikot
+                
             if random_komento == "e":
                 break
 
