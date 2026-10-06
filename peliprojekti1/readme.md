@@ -7,6 +7,8 @@ eli alustavasti pelini ideana on että pelaaja voi pelata "random masiinaa" (nim
 
 ## PELIN KESTÄVÄN KEHITYKSEN AIHE ON EI KÖYHYYTTÄ!
 
+## 6.10 
+lisäsin peliin areenat ja tällähetkellä pystyt valitsemaan yhden lineaarisen reitin (1,2,3). pitää lisätä vielä eri vaihtoehtoja ja katsoa onko isompia bugeja ja muutenkin hienosäätää koodia. melko hyvä päivä ja lisään esineitä vielä.
 
 ## 5.10 
 lisäsin päävalikkoon sys.exit() mikä sulkee pelin jos pelaaja on alle 12 vuotias (tämän sain luokkalaiseltani). Lisäsin myös päävalikkoon komennon minkä avulla käyttäjä voi katsoa tämänhetkisen kolikkomääränsä. Sitten siirryin jatkamaan koittaa selvittää edellistä ongelmaani missä esineen kolikko arvo ei talletu pelaajalle. Löysin netistä "global" jonka avulla pystyn tallettamaan esineen kolikkomäärän pelaajalle juuri niinkuin kuuluukin. Tämän jälkeen lisäsin pari esinettä lisää tavoitteena on 100 eri esinettä joilla on eri arvo mutta uskon että mielikuvitus loppuu kesken. Seuraavaksi siirryn tekemään alueita ja niille eri vihollisia.    
