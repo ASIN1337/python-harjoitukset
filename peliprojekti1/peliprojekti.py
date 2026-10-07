@@ -28,15 +28,15 @@ visamakimonsterikolikot = random.randint(200,450)
 jukolamonsterikolikot = random.randint(50,250)
 
 kidemonsterinkolikot = random.randint(50,150)
-krismonsterinkolikot = random.randint(50,150)
+krismonsterinkolikot = random.randint(50,150)           #lohjan monstereiden kolikko generointi
 prismamonsterinkolikot = kidemonsterinkolikot + krismonsterinkolikot
 
-class Paavalikko():                                 
+class Paavalikko():                                 #päävalikko ja sen sisällä loop
     def __init__(self, pelaajan_kolikot):
         self.pelaaja_kolikot = pelaajan_kolikot
         kayttajan_nimi = input("Anna käyttäjän nimi: ")
         selvitys = int(input("Anna ikäsi: "))
-        print("..........................................................................................")
+        print("..........................................................................................") #tämä vain ulkonäön takia varmaan olisi ollut nätimpiä keinoja mutta omaa käsialaa ainakin
         print(f"käyttäjän nimi: {kayttajan_nimi}")
         print(f"käyttäjän ikä: {selvitys}")
         print("..........................................................................................")
@@ -44,7 +44,7 @@ class Paavalikko():
         if selvitys < 12:
             print("käyttäjä on alaikäinen")
             print("peli suljetaan")
-            sys.exit()
+            sys.exit()      #peli suljetaan/lakkaa toimimasta
 
         if selvitys >= 12:
             print(f"Hei! {kayttajan_nimi} Tervettuloa peliin!")
@@ -54,7 +54,7 @@ class Paavalikko():
                 komento = input("Anna komento ""a""/aloita peli o/ohjeet i/intro ""r""/uhkapelaus ""c""/kolikoiden tarkastus: ")
 
                 if komento == "c":
-                    lapi = range(6)
+                    lapi = range(6)     #tämä ulkonäön takia kanssa. luo 6 riviä tyhjää printtiä. netistä löydetty.
                     for n in lapi:
                         print()
                     print("..........................................................................................")
@@ -79,7 +79,7 @@ class Paavalikko():
                 if komento == "a":
                     break
 
-    def pelaa_random(self, pelaajan_kolikot):                
+    def pelaa_random(self, pelaajan_kolikot):               #random masiinan toiminta
         self.pelaajan_kolikot = pelaajan_kolikot
         global pelaajankolikot          #Netistä löydetty "global jolla saan funktiosta arvon palautettua pääohjelmaan lisätietoa readme tiedostossa"
         while True:
@@ -595,25 +595,25 @@ class Paavalikko():
             if random_komento == "e":
                 break
 
-class Hahmo(Paavalikko):
+class Hahmo():      #tästä peritään hahmoille nimet ja kolikot sekä eri toimintoja
     def __init__(self, nimi, pelaajan_kolikot):
         self.nimi = nimi
         self.pelaajan_kolikot = pelaajan_kolikot 
         self.monsterin_kolikot = pelaajan_kolikot
 
-    def tulosta_tiedot(self):
+    def tulosta_tiedot(self):       #yksiselitteinen
         print("..........................................................................................")
         print(f"hahmon nimi: {self.nimi}")
         print(f"hahmon kolikkomäärä: {self.pelaajan_kolikot}")
         print("..........................................................................................")
 
-    def monsterin_tiedot(self):
+    def monsterin_tiedot(self):     #yksiselitteinen
         print("..........................................................................................")
         print(f"vastuksen nimi: {self.nimi}")
         print(f"vastuksen kolikkomäärä: {self.monsterin_kolikot}")
         print("..........................................................................................")
 
-    def taistelu(self, vastus):
+    def taistelu(self, vastus):         #tästä alkaa eri alueiden taistelut
         print("ensimmäisen alueen taistelu!")
         print(f"{self.nimi} vastaan {vastus.nimi}")
         print(f"{self.nimi} kolikkomäärä on : {self.pelaajan_kolikot} vastustajan kolikkomäärä on: {vastus.monsterin_kolikot}")
@@ -641,7 +641,7 @@ class Hahmo(Paavalikko):
 
     def taistelu_hml(self, vastus):
         print("areena Pizzeria melodi taistelu!!!!")
-        input()
+        input()     #hyvä menetelmä pitää pelaaja edelleen toiminnassa ja jakaaa tekstiä erittäin hyvin
         print(f"{self.nimi} vastaan {vastus.nimi}")
         input()
         print(f"{self.nimi} kolikkomäärä on : {self.pelaajan_kolikot} vastustajan kolikkomäärä on: {vastus.monsterin_kolikot}")
@@ -832,12 +832,12 @@ class Hahmo(Paavalikko):
             print(f"pelaajan tämänhetkinen kolikkomäärä: {self.pelaajan_kolikot}")
             input()
 
-class Pelaaja(Hahmo):
+class Pelaaja(Hahmo):       #tässä luodaan hahmo. nimi ja kolikot peritään Hahmo luokalta
     def __init__(self, nimi, kolikot):
         super().__init__(nimi,kolikot)
 
 
-    def siirry_areenalle_eka(self, minne):
+    def siirry_areenalle_eka(self, minne):      #alueen valinta
 
         if minne == "1":
             lapi = range(6)
@@ -898,7 +898,7 @@ class Pelaaja(Hahmo):
             input()
             self.lohja_eka_areena()
 
-    def HML_eka_areena(self):
+    def HML_eka_areena(self):           #tästä eteenpäin alkaa areenat
         pelaaja1.tulosta_tiedot()
         input()
         hml_monsteri.monsterin_tiedot()
@@ -1059,7 +1059,7 @@ class Pelaaja(Hahmo):
         print("ONNEKSI OLKOON VOITIT PELIN!!!")
 
 
-Paavalikko(pelaajankolikot)
+Paavalikko(pelaajankolikot)     #pääkoodissa päävalikko ensimmäinen asia (koodi kyllä käy kaiken muun ekana läpi)
 
 lapi = range(6)
 for n in lapi:
@@ -1068,7 +1068,7 @@ print(".........................................................................
 print("peli aloitetaan!")
 print("..........................................................................................")
 
-kris_monsteri = Pelaaja("kris", krismonsterinkolikot)
+kris_monsteri = Pelaaja("kris", krismonsterinkolikot)       #tästä eteenpäin olioiden luontia ja joitakin inputteja parametreiksi
 kide_monsteri = Pelaaja("kide", kidemonsterinkolikot)
 lohja_yhteensa = Pelaaja("nothing", prismamonsterinkolikot)
 avaruus_hirvio1 = Pelaaja("avaruus monsteri", monsterinkolikot)
