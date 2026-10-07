@@ -83,7 +83,7 @@ class Paavalikko():
             for n in lapi:
                 print()
 
-            random1 = random.randint(1,43)
+            random1 = random.randint(1,44)
 
             if random_komento == "k":
                 if random1 == 1:
