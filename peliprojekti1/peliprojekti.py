@@ -20,12 +20,16 @@ kuumonsterinkolikot = random.randint(1,100)
 
 tallinnamonsterikolikot = random.randint(1,175)
 satamamonsterinkolikot = random.randint(1,20)           #Alue viro monstereiden kolikko generointi
-vanhakaupunkimonsterinkolikot = random.randint(1, 50)
+vanhakaupunkimonsterinkolikot = random.randint(1, 500)
 
 hmlmonsterikolikot = random.randint(1,15)
 katumamonsterikolikot = random.randint(1,25)            #Alue Hämeenlinna monstereiden kolikko generointi
 visamakimonsterikolikot = random.randint(1,200)
 jukolamonsterikolikot = random.randint(1,250)
+
+kidemonsterinkolikot = random.randint(1,150)
+krismonsterinkolikot = random.randint(1,150)
+prismamonsterinkolikot = kidemonsterinkolikot + krismonsterinkolikot
 
 class Paavalikko():                                 
     def __init__(self, pelaajan_kolikot):
@@ -83,7 +87,7 @@ class Paavalikko():
             for n in lapi:
                 print()
 
-            random1 = random.randint(1,44)
+            random1 = random.randint(1,60)
 
             if random_komento == "k":
                 if random1 == 1:
@@ -446,6 +450,140 @@ class Paavalikko():
                     print("..........................................................................................")
                     pelaajankolikot = self.pelaajan_kolikot + 99
                     return pelaajankolikot
+
+                if random1 == 45:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN HIIRI! ESINEEN ARVO ON 2 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 2
+                    return pelaajankolikot
+
+                if random1 == 46:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN NÄPPÄIMISTÖ! ESINEEN ARVO ON 1 KOLIKKO")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 1
+                    return pelaajankolikot
+
+                if random1 == 47:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN HIIRIMATTO! ESINEEN ARVO ON 1 KOLIKKO")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 1
+                    return pelaajankolikot
+
+                if random1 == 48:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN AVAIN! ESINEEN ARVO ON 4 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 4
+                    return pelaajankolikot
+
+                if random1 == 49:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN AVAIMENPERÄ! ESINEEN ARVO ON 4 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 4
+                    return pelaajankolikot
+
+                if random1 == 50:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN TARRA! ESINEEN ARVO ON 4 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 4
+                    return pelaajankolikot
+
+                if random1 == 51:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN RANNEKE! ESINEEN ARVO ON 5 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 5
+                    return pelaajankolikot
+
+                if random1 == 52:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN BATMAN PEHMOLELU!! ESINEEN ARVO ON 10 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 10
+                    return pelaajankolikot
+
+                if random1 == 53:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN KIDEN SUKKA!! ESINEEN ARVO 10 KOLIKKOA")
+                    print("todella haiseva sukka...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 10
+                    return pelaajankolikot
+
+                if random1 == 54:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN JONNAN HAISEVA SUKKA! ESINEEN ARVO ON 5 KOLIKKOA")
+                    print("todella todella haisevat...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 5
+                    return pelaajankolikot
+
+                if random1 == 55:
+                    print("..........................................................................................")
+                    print("OLET SAANUT KRISUN HAISEVAN SUKAN! ESINEEN ARVO ON 6 KOLIKKOA")
+                    print("miten sukat voivat haista näin paljon...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 6
+                    return pelaajankolikot
+
+                if random1 == 56:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN MATKALAUKKU! ESINEEN ARVO ON 3 KOLIKKOA")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 3
+                    return pelaajankolikot
+
+                if random1 == 57:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN NUUDELI PAKETTI! ESINEEN ARVO ON 100 KOLIKKOA")
+                    print("nammmm... rakkaat nuudelit...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 100
+                    return pelaajankolikot                
+
+                if random1 == 58:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN PEHMOLELU FANSKU!!! ESINEEN ARVO ON 500 KOLIKKOA")
+                    print("fansku parhain koira ikinä...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot + 500
+                    return pelaajankolikot
+
+                if random1 == 59:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN LASKU! ESINEEN ARVO ON -700 KOLIKKOA")
+                    print("KOLIKOT OTETAAN HAHMOLTASI")
+                    print("..........................................................................................")
+                    pelaajankolikot = self.pelaajan_kolikot - 700
+                    return pelaajankolikot
+
+                if random1 == 60:
+                    print("..........................................................................................")
+                    print("OLET SAANUT ESINEEN OMPUN SUKAT! ESINEEN ARVO ON 20 KOLIKKOA")
+                    print("tuoksuupas hyvältä...")
+                    print("KOLIKOT ANNETAAN HAHMOLLESI")
+                    print("..........................................................................................")
+                    pelaajankolikot =self.pelaajan_kolikot + 20
+                    return pelaajankolikot
                 
             if random_komento == "e":
                 break
@@ -667,6 +805,26 @@ class Hahmo(Paavalikko):
             print(f"pelaajan tämänhetkinen kolikkomäärä: {self.pelaajan_kolikot}")
             input()
 
+    def taistelu_lohjan_prisma(self, vastus1, vastus2, vastus3):
+        print("areena Lohjan prisma!!!")
+        input()
+        print(f"{self.nimi} vastaan {vastus1.nimi} ja {vastus2.nimi}")
+        input()
+        print(f"{self.nimi} kolikkomäärä: {self.pelaajan_kolikot} vastustajien kolikkomäärät ovat: {vastus1.monsterin_kolikot} ja {vastus2.monsterin_kolikot}")
+        input()
+        if vastus3.monsterin_kolikot > self.pelaajan_kolikot:
+            print(f"{self.nimi} et selvinnyt tästä alueesta")
+            input()
+            print("peli päättyy.")
+            sys.exit()
+        else:
+            print(f"{self.nimi} selvisit tästä alueesta.")
+            input()
+            self.pelaajan_kolikot = self.pelaajan_kolikot - vastus1.monsterin_kolikot
+            self.pelaajan_kolikot = self.pelaajan_kolikot - vastus2.monsterin_kolikot
+            print(f"pelaajan tämänhetkinen kolikkomäärä: {self.pelaajan_kolikot}")
+            input()
+
 class Pelaaja(Hahmo):
     def __init__(self, nimi, kolikot):
         super().__init__(nimi,kolikot)
@@ -718,6 +876,20 @@ class Pelaaja(Hahmo):
             print("..........................................................................................")
             input()
             self.avaruus_eka_areena()
+
+        if minne == "4":
+            lapi = range(6)
+            for n in lapi:
+                print()
+            print("..........................................................................................")
+            print("valitsit lohja")
+            print("..........................................................................................")
+            input()
+            print("..........................................................................................")
+            print("sinut siirretään areenalle lohjan prisma")
+            print("..........................................................................................")
+            input()
+            self.lohja_eka_areena()
 
     def HML_eka_areena(self):
         pelaaja1.tulosta_tiedot()
@@ -861,6 +1033,24 @@ class Pelaaja(Hahmo):
         pelaaja1.taistelu_kuu(kuu_monsteri)
         print("ONNEKSI OLKOON VOITIT PELIN!!")
 
+    def lohja_eka_areena(self):
+        print("..........................................................................................")
+        print("sinut on siirretty Lohjan prismaan")
+        print("..........................................................................................")
+        input()
+        print("..........................................................................................")
+        print("täällä on ulostetta lattialla...")
+        print("miten tämä on edes mahdollista...")
+        print("..........................................................................................")
+        input()
+        pelaaja1.tulosta_tiedot()
+        input()
+        kide_monsteri.monsterin_tiedot()
+        kris_monsteri.monsterin_tiedot()
+        input()
+        pelaaja1.taistelu_lohjan_prisma(kide_monsteri, kris_monsteri, lohja_yhteensa)
+        print("ONNEKSI OLKOON VOITIT PELIN!!!")
+
 #tulosta_intro()
 Paavalikko(pelaajankolikot)
 
@@ -871,6 +1061,9 @@ print(".........................................................................
 print("peli aloitetaan!")
 print("..........................................................................................")
 
+kris_monsteri = Pelaaja("kris", krismonsterinkolikot)
+kide_monsteri = Pelaaja("kide", kidemonsterinkolikot)
+lohja_yhteensa = Pelaaja("nothing", prismamonsterinkolikot)
 avaruus_hirvio1 = Pelaaja("avaruus monsteri", monsterinkolikot)
 tallinnan_monsteri = Pelaaja("mik", tallinnamonsterikolikot)
 jukola_monsteri = Pelaaja("normaali random mies", jukolamonsterikolikot)
@@ -878,11 +1071,11 @@ hml_monsteri = Pelaaja("mare", hmlmonsterikolikot)
 katuma_monsteri = Pelaaja("herrasmies", katumamonsterikolikot)
 visamaki_monsteri = Pelaaja("croco", visamakimonsterikolikot)
 satama_monsteri = Pelaaja("satamamonsteri", satamamonsterinkolikot)
-vanha_monsteri = Pelaaja("vanhan kaupungin monsteri", vanhakaupunkimonsterinkolikot)
+vanha_monsteri = Pelaaja("mikk", vanhakaupunkimonsterinkolikot)
 mars_monsteri = Pelaaja("mars monsteri", marsmonsterinkolikot)
 jupiter_monsteri = Pelaaja("jupiter monsteri", jupitermonsterinkolikot)
 kuu_monsteri = Pelaaja("kuu monsteri", kuumonsterinkolikot)
 pelaajan_nimi=input("anna pelaajallesi nimi: ")
-valitse_areena = input("Valitse areena mihin haluat mennä ""1""/Hämeenlinna ""2""/Tallinna ""3""/avaruus: ")
+valitse_areena = input("Valitse areena mihin haluat mennä ""1""/Hämeenlinna ""2""/Tallinna ""3""/avaruus 4/lohja: ")
 pelaaja1 = Pelaaja(pelaajan_nimi, pelaajankolikot)
 pelaaja1.siirry_areenalle_eka(valitse_areena)
