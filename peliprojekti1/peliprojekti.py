@@ -1053,6 +1053,7 @@ class Pelaaja(Hahmo):       #tässä luodaan hahmo. nimi ja kolikot peritään H
         pelaaja1.tulosta_tiedot()
         input()
         kide_monsteri.monsterin_tiedot()
+        input()
         kris_monsteri.monsterin_tiedot()
         input()
         pelaaja1.taistelu_lohjan_prisma(kide_monsteri, kris_monsteri, lohja_yhteensa)
