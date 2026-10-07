@@ -7,6 +7,9 @@ eli alustavasti pelini ideana on että pelaaja voi pelata "random masiinaa" (nim
 
 ## PELIN KESTÄVÄN KEHITYKSEN AIHE ON EI KÖYHYYTTÄ!
 
+## 7.10
+muuutin pelin alueita ja ideaa. lisäsin monta eri taistelu funktiota ja lisäsin monta eri taistelu funktiota jotta voisin muokata paremmin pelin tarinaa ja mahdollisesti dialogia. sain myös sievennettyä pelin ulkoasua. sain myös lisättyä esineitä.
+
 ## 6.10 
 lisäsin peliin areenat ja tällähetkellä pystyt valitsemaan yhden lineaarisen reitin (1,2,3). pitää lisätä vielä eri vaihtoehtoja ja katsoa onko isompia bugeja ja muutenkin hienosäätää koodia. melko hyvä päivä ja lisään esineitä vielä.
 
