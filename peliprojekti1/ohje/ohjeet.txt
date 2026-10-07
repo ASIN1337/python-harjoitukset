@@ -1,0 +1,10 @@
+
+..............................................................................................................................................
+Pelin tavoitteena on päästä Alueet (Avaruus, Viro, Hämeenlinna) ja niiden sisällä eri areenat.
+Areenat sisältävät vastustajia joita vastaan taistelet.
+Taistelut määritetään sillä kummalla on enemmän kolikoita.
+Pelaaja saa kolikoita ("random masiinalla) ja vastustajalla on joka kerta satunnainen kolikkomäärä.
+Jos pelaajalla on enemmän kolikoita kun vastustajalla voitat vastustajan ja hänen kolikkomääränsä vähennetään sinun kokonaismäärästä.
+Pelaaja siirtyy seuraavalle areenalle ja toistaa kunnes hän on päihittänyt viimeisen areenan.
+Pelaaja häviää jos vastustajalla on enemmän kolikoita ja silloin peli sulkeutuu.
+..............................................................................................................................................

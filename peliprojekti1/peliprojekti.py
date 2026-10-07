@@ -1,34 +1,34 @@
 import random 
 import sys      #tämän käyttö siihen että peli suljetaan jos pelaaja on alaikäinen 
 
-#def tulosta_intro():
-    #with open("intro", "r") as tiedosto:
-        #intro = tiedosto.read()
-        #print(intro)
+def tulosta_intro():
+    with open("peliprojekti1/ohje/intro.txt", "r", encoding="utf-8") as tiedosto:
+        intro = tiedosto.read()
+        print(intro)
 
-#def tulosta_ohjeet():
-    #with open("ohjeet.txt", "r") as tiedosto:
-        #ohje = tiedosto.read()
-        #print(ohje)
+def tulosta_ohjeet():
+    with open("peliprojekti1/ohje/ohjeet.txt", "r", encoding="utf-8") as tiedosto:
+        ohje = tiedosto.read()
+        print(ohje)
 
 pelaajankolikot = random.randint(1,50)
 monsterinkolikot = random.randint(1,100)
 
 marsmonsterinkolikot = random.randint(1,20)
 jupitermonsterinkolikot = random.randint(1,50)      #Alue avaruus monsteriden kolikko generointi
-kuumonsterinkolikot = random.randint(1,100)
+kuumonsterinkolikot = random.randint(45,100)
 
-tallinnamonsterikolikot = random.randint(1,175)
+tallinnamonsterikolikot = random.randint(50,175)
 satamamonsterinkolikot = random.randint(1,20)           #Alue viro monstereiden kolikko generointi
-vanhakaupunkimonsterinkolikot = random.randint(1, 500)
+vanhakaupunkimonsterinkolikot = random.randint(100, 500)
 
 hmlmonsterikolikot = random.randint(1,15)
 katumamonsterikolikot = random.randint(1,25)            #Alue Hämeenlinna monstereiden kolikko generointi
-visamakimonsterikolikot = random.randint(1,200)
-jukolamonsterikolikot = random.randint(1,250)
+visamakimonsterikolikot = random.randint(200,450)
+jukolamonsterikolikot = random.randint(50,250)
 
-kidemonsterinkolikot = random.randint(1,150)
-krismonsterinkolikot = random.randint(1,150)
+kidemonsterinkolikot = random.randint(50,150)
+krismonsterinkolikot = random.randint(50,150)
 prismamonsterinkolikot = kidemonsterinkolikot + krismonsterinkolikot
 
 class Paavalikko():                                 
@@ -51,7 +51,7 @@ class Paavalikko():
             print("..........................................................................................")
             while True:
                 print("päävalikko!!")
-                komento = input("Anna komento ""a""/aloita peli o/ohjeet ""r""/uhkapelaus ""c""/kolikoiden tarkastus: ")
+                komento = input("Anna komento ""a""/aloita peli o/ohjeet i/intro ""r""/uhkapelaus ""c""/kolikoiden tarkastus: ")
 
                 if komento == "c":
                     lapi = range(6)
@@ -66,8 +66,15 @@ class Paavalikko():
                 if komento == "r":
                     self.pelaa_random(pelaajankolikot)
 
-                #if komento == "o":
-                    #tulosta_ohjeet()
+                if komento == "o":
+                    tulosta_ohjeet()
+
+                if komento == "i":
+                    tulosta_intro()
+
+                if komento == "a" and pelaajankolikot == 222:
+                    print("ONNITTELUT LÖYSIT SALAISEN VOITON !!!!!")
+                    sys.exit()
 
                 if komento == "a":
                     break
@@ -1051,7 +1058,7 @@ class Pelaaja(Hahmo):
         pelaaja1.taistelu_lohjan_prisma(kide_monsteri, kris_monsteri, lohja_yhteensa)
         print("ONNEKSI OLKOON VOITIT PELIN!!!")
 
-#tulosta_intro()
+
 Paavalikko(pelaajankolikot)
 
 lapi = range(6)
@@ -1069,7 +1076,7 @@ tallinnan_monsteri = Pelaaja("mik", tallinnamonsterikolikot)
 jukola_monsteri = Pelaaja("normaali random mies", jukolamonsterikolikot)
 hml_monsteri = Pelaaja("mare", hmlmonsterikolikot)
 katuma_monsteri = Pelaaja("herrasmies", katumamonsterikolikot)
-visamaki_monsteri = Pelaaja("croco", visamakimonsterikolikot)
+visamaki_monsteri = Pelaaja("asin", visamakimonsterikolikot)
 satama_monsteri = Pelaaja("satamamonsteri", satamamonsterinkolikot)
 vanha_monsteri = Pelaaja("mikk", vanhakaupunkimonsterinkolikot)
 mars_monsteri = Pelaaja("mars monsteri", marsmonsterinkolikot)
